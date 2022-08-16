@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html { 
+    background: #f8f1ff;
+}
+
+/* ====== Botões ====== */
+
+.addButton {
+    width: 40%;
+    padding: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    color: #fff;
+    background: #FC4B3E;
+}
+
+.addButton svg {
+    margin-right: 4px;
+}
+
+.addButton:hover {
+    cursor: pointer;
+    background: #FC2C1C;
+}
+
+.editButton, .deleteButton {
+    width: 40%;
+    margin: 4px;
+    padding: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+.editButton {
+    color: #fff;
+    background: #00111A;
+}
+
+.deleteButton {
+    color: #fff;
+    background: #FC4B3E;
+}
+
+.editButton svg, .deleteButton svg {
+    margin-right: 2px;
+}
+
+.editButton:hover, .deleteButton:hover {
+    cursor: pointer;
+}
+
+/* ====== groupItems ListGrid Card ====== */
+
+.groupItems {
+    width: 100%;
+    padding: 12px 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerGrid {
+    width: 100%;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+
+.card {
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 1px solid #44444455;
+    border-radius: 10px;
+
+    box-shadow: 0px 8px 16px 0px #00000031;
+}
+
+.cardHeader {
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cardBody {
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cardFooter {
+    width: 100%;
+    padding: 2px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .containerGrid {
+        grid-template-columns: auto auto auto;
+        gap: 8px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .containerGrid {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .containerGrid {
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .groupItems {
+        flex-direction: column;
+    }
+
+    .addButton {
+        width: 100%;
+    }
+}
+
+/* ====== FORM ====== */
+.Form {
+    width: 100%;
+    height: auto;
+    padding: 4px;
+}
+
+.containerForm {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.headerForm {
+    width: 100%;
+    padding: 2px;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+.containerForm input[type="text"], select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+
+    display: inline-block;
+    border: none;
+}
+
+.formGroup {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerSelect {
+    width: 48%;
+}
+
+.saveButton {
+    width: 100%;
+    padding: 15px 20px;
+
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+
+    opacity: 0.9;
+
+    border: none;
+
+    color: #fff;
+    background: #41cF8F;
+}
+
+.saveButton:hover {
+    opacity: 1;
+}

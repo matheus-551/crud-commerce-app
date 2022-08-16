@@ -1,0 +1,60 @@
+.navbar {
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #00111A;
+}
+
+.logo {
+    padding: 8px;
+    color: #fff;
+}
+
+nav {
+    width: 50%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    color: #fff;
+}
+
+nav a {
+    margin: 10px;
+    padding: 4px;
+    flex-shrink: 0;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+nav a:hover {
+    cursor: pointer;
+    font-weight: 500;
+    transform: scale(1.1);
+    transition: 200ms ease-in-out;
+}
+
+.menuButton {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    nav {
+        display: none;
+    }
+
+    .menuButton {
+        display: block;
+    }
+
+    .menuButton:hover {
+        cursor: pointer;
+    }
+}
