@@ -1,4 +1,4 @@
-# crud-commerce-app
+# CRUD COMMERCE APP
 
 ## Tecnologias utilizadas 💾
 
